@@ -1,0 +1,16 @@
+[package]
+name = "hourglass"
+version = "2.0.0"
+edition = "2021"
+
+[[bin]]
+name = "Hourglass"
+path = "main.rs"
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+rusqlite = { version = "0.40", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+uuid = { version = "1", features = ["v4", "serde"] }
+tiny_http = "0.12"
